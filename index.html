@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <style>
+    .success, .error {
+      color: white;
+      padding: 5px;
+      margin: 5px 0 15px 0;
+    }
+
+    .success {
+      background: green;
+    }
+
+    .error {
+      background: red;
+    }
+  </style>
+  <title>STUDENT LIST</title>
+</head>
+<body>
+  <div class="container">
+    <h1>LIST OF ALL STUDENTS</h1>
+    <form id="student-form">
+      <div>
+        <label for="studentName">Student's Full Name</label>
+        <input type="text" id="studentName" class="u-full-width">
+      </div>
+      <div>
+        <label for="department">Department</label>
+        <input type="text" id="department" class="u-full-width">
+      </div>
+      <div>
+        <label for="level">Level</label>
+        <input type="text" id="level" class="u-full-width">
+      </div>
+      <div>
+        <input type="submit" value="Submit" class="u-full-width">
+      </div>
+    </form>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Student Names</th>
+          <th>Department</th>
+          <th>Level</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="student-list"></tbody>
+    </table>
+  </div>
+
+  </script>
+<!-- 
+<button class="edit" onclick="edit()">edit</button>
+
+
+  <script>
+  
+    const edit() {
+      document.getElementById('').innerHTML
+    }
+
+ -->
+  <script src="app.js"></script>
+</body>
+</html>
